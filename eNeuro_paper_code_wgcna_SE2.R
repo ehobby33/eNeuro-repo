@@ -7,7 +7,7 @@
 ## Eric Dammer - adapted code for WGCNA from Neelroop Parikshak, Vivek Swarup, and Divya Nandakumar
 ## SeyfriedLab&ProteomicsCorePipeline.R
 ##
-## Applied to Emory 41 BULK Data from Herskowitz Lab at UAB - Evan Liu
+## Applied to Emory 41 BULK Data from Herskowitz Lab at UAB
 ##
 ## Goal: This code will carry out coexpression network analysis and systems biology for Protein Abundance
 ##########################################################################################################
@@ -2206,6 +2206,7 @@ library(piano)
 source("GOparallel-FET.R")
 GOparallel()  # parameters are set in global environment as above; if not set, the function falls back to defaults and looks for all inputs available.
 # priority is given to modulesInMemory
+
 
 
 
