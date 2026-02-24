@@ -7,10 +7,9 @@
 ## Eric Dammer - adapted code for WGCNA from Neelroop Parikshak, Vivek Swarup, and Divya Nandakumar
 ## SeyfriedLab&ProteomicsCorePipeline.R
 ##
-## Applied to ROSMAP BA37 BULK Data from Herskowitz Lab at UAB - Evan Liu
+## Applied to Emory 41 BULK Data from Herskowitz Lab at UAB - Evan Liu
 ##
 ## Goal: This code will carry out coexpression network analysis and systems biology for Protein Abundance
-##       Also tested with alternate code for cleaning sparse RNA-Seq FPKM or TPM data (commented out)
 ##########################################################################################################
 
 ## CODE BLOCKS:
@@ -22,10 +21,6 @@
 
 # WGCNA blockwiseModules network construction
 # GlobalNetworkPlots and kMEtable Output
-# FET to cell type specific symbol lists, modified to optionally adjust for cross-species symbol lookup inefficiency/loss
-# ANOVA / DiffEx table generation -- list of ANOVAout dataframes for different subgroup comparisons, if necessary; otherwise, the list contains one data.frame
-# Generate Volcano plots with WGCNA module color overlay (multiple options) 
-# iGRAPHs (Multiple Toggle Options, e.g. BioGRID interactome overlap) // CONNECTIVITY PLOT
 # One-Step GO-ELITE -- configurable user parameter section at top of code block
 # Speakeasy2 code
 
@@ -2211,6 +2206,7 @@ library(piano)
 source("GOparallel-FET.R")
 GOparallel()  # parameters are set in global environment as above; if not set, the function falls back to defaults and looks for all inputs available.
 # priority is given to modulesInMemory
+
 
 
 
